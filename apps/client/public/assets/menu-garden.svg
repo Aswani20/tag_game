@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#388deb"/><stop offset=".65" stop-color="#62cef4"/><stop offset="1" stop-color="#9decd9"/></linearGradient>
+ <linearGradient id="leaf" x2="0" y2="1"><stop stop-color="#2df19a"/><stop offset="1" stop-color="#08bb74"/></linearGradient>
+ <linearGradient id="soil" x2="0" y2="1"><stop stop-color="#ff519b"/><stop offset="1" stop-color="#f33e86"/></linearGradient>
+ <g id="tree"><path d="M-9 0v-144h22V0z" fill="#c82688"/><path d="m3-55-38-36m40 7 40-35" fill="none" stroke="#cf2987" stroke-width="10"/><g fill="url(#leaf)"><rect x="-48" y="-180" width="99" height="78" rx="21"/><rect x="-66" y="-109" width="51" height="35" rx="12"/><rect x="26" y="-132" width="57" height="39" rx="14"/></g></g>
+ <g id="flower"><path d="m0 0 2-21" stroke="#a82a83" stroke-width="4"/><g fill="currentColor"><circle cx="2" cy="-25" r="7"/><circle cx="-4" cy="-21" r="6"/><circle cx="8" cy="-21" r="6"/></g><circle cx="2" cy="-22" r="4" fill="#fff6ca"/></g>
+ <g id="crate"><rect width="43" height="43" rx="5" fill="#e69435"/><rect x="2" y="1" width="39" height="36" rx="4" fill="#ffc45e"/><path d="m8 30 23-23" stroke="#e9a246" stroke-width="7"/></g>
+ <g id="arch"><rect width="185" height="20" rx="10"/><rect x="16" y="13" width="21" height="110"/><rect x="69" y="13" width="21" height="110"/><rect x="131" y="13" width="21" height="110"/></g>
+ <pattern id="turf" width="32" height="17" patternUnits="userSpaceOnUse"><path d="M0 0h32v8q-8 12-16 2Q7 18 0 8z" fill="#49dc69"/></pattern>
+</defs>
+<path fill="url(#sky)" d="M0 0h1600v900H0z"/>
+<g fill="#fff" opacity=".19"><path d="M68 190h179q15-2 10-13-3-9-17-9-6-28-29-27-15 0-24 14-24-38-51-10-5 7-7 16-35-9-41 11-22-1-20 18z"/><path d="M1200 157h156q11-2 7-10-7-11-20-9-13-33-37-13-18-34-44-8-8 8-9 19-32-6-35 10-17-2-18 11z"/></g>
+<g fill="#5297e1" opacity=".65"><use href="#arch" x="42" y="538"/><use href="#arch" transform="translate(372 511) scale(1.4)"/><use href="#arch" x="993" y="519"/><use href="#arch" transform="translate(1330 496) scale(1.25)"/></g>
+<path fill="#70beeb" d="M0 600Q188 506 389 617T800 605t410-29q200-81 390-4v328H0z"/>
+<path fill="#81d6e4" d="M0 690q227-136 475-21t487-12q160-68 288-12t350 9v246H0z"/>
+<g transform="translate(0 660)"><path d="M0 0h346l-4 19H0z" fill="#ed4688"/><rect width="346" height="8" fill="#6eee6b"/><use href="#tree" transform="translate(102 0) scale(.83)"/><use href="#flower" transform="translate(287 0)" color="#ffe375"/></g>
+<g transform="translate(1287 609)"><path d="M0 0h313v18H0z" fill="#ed4688"/><rect width="313" height="8" fill="#6eee6b"/><use href="#tree" transform="translate(233 0) scale(.61)"/><use href="#flower" x="59" color="#ff68ac"/></g>
+<path fill="url(#soil)" d="M0 776h1600v124H0z"/><path fill="url(#turf)" d="M0 769h1600v22H0z"/><path fill="#95ff75" d="M0 768h1600v5H0z"/>
+<g fill="#d9367c" opacity=".45"><ellipse cx="210" cy="829" rx="9" ry="4"/><ellipse cx="237" cy="839" rx="5" ry="3"/><ellipse cx="1190" cy="817" rx="12" ry="5"/><ellipse cx="1480" cy="864" rx="8" ry="4"/></g>
+<use href="#flower" x="117" y="768" color="#ff66aa"/><use href="#flower" x="493" y="768" color="#ffe375"/><use href="#flower" x="1240" y="768" color="#ff66aa"/>
+<g transform="translate(330 725)"><use href="#crate"/><use href="#crate" x="44"/><use href="#crate" x="44" y="-43"/></g>
+<path d="M1083 768v-6q0-19 19-19h27q21 0 21 19v6" fill="#ed6aee"/><rect x="1096" y="752" width="41" height="12" rx="6" fill="#ffb4fe"/>
+</svg>

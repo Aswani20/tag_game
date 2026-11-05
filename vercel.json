@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "game": {
+      "root": "apps/client",
+      "framework": "vite",
+      "installCommand": "cd ../.. && npm ci --include=dev --workspaces --include-workspace-root",
+      "buildCommand": "npm run build -w @tag/shared && npm run build -w @tag/client",
+      "outputDirectory": "dist"
+    }
+  },
+  "rewrites": [{ "source": "/(.*)", "destination": { "service": "game" } }]
+}

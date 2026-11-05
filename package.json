@@ -1,0 +1,19 @@
+{
+  "name": "tag-online",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": ["apps/*", "packages/*"],
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "npm run build -w @tag/shared && concurrently -k -n shared,server,client \"npm run dev -w @tag/shared\" \"npm run dev -w @tag/server\" \"npm run dev -w @tag/client\"",
+    "build": "npm run build -w @tag/shared && npm run build -w @tag/server && npm run build -w @tag/client && node scripts/compress.mjs",
+    "typecheck": "npm run build -w @tag/shared && npm run typecheck --workspaces --if-present",
+    "test": "npm run build -w @tag/shared && node --test packages/shared/test/*.test.mjs",
+    "dev:local": "npm run build -w @tag/shared && npm run dev -w @tag/client",
+    "start": "node --env-file-if-exists=.env apps/server/dist/index.js",
+    "test:release": "npm run build && node --test apps/server/test/release-latency.mjs",
+    "test:online": "npm run build -w @tag/shared && npm run build -w @tag/server && node --test apps/server/test/*.test.mjs"
+  },
+  "devDependencies": { "concurrently": "^9.2.1", "typescript": "^5.9.3" }
+}
